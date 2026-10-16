@@ -145,6 +145,16 @@ section{margin-top:44px;}
 
 /* 页脚 */
 footer{margin-top:52px;padding-top:24px;border-top:1px solid var(--rule);}
+.qr-guide{
+  margin-top:22px;display:flex;align-items:center;gap:20px;
+  background:var(--bg2);border:1px solid var(--rule);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:18px 24px;
+}
+.qr-guide img{flex:none;width:112px;height:112px;border:1px solid var(--rule);border-radius:10px;background:#fff;}
+.qr-guide h2{font-size:1rem;font-weight:800;margin-bottom:4px;}
+.qr-guide p{font-size:.82rem;color:var(--muted);line-height:1.7;}
+.qr-guide .qr-url{color:var(--accent);font-weight:600;letter-spacing:.03em;}
+@media (max-width:600px){.qr-guide{flex-direction:column;text-align:center;gap:12px;}}
 footer .sources h2{font-size:1rem;margin-bottom:12px;}
 footer .sources ol{padding-left:1.3rem;font-size:.85rem;color:var(--muted);}
 footer .sources li{margin-bottom:.6rem;overflow-wrap:break-word;}
@@ -287,6 +297,14 @@ footer .sources .src-url{color:var(--accent);}
         <li id="cite-1"><span class="src-title">《耀州窑研究热点文档》（学术论文概况·热点新闻与传承人物），用户提供 DOCX 文档。</span><span class="src-url">User-uploaded document</span></li>
         <li id="cite-2"><span class="src-title">《非物质文化遗产资源调研摸底登记表》——铜川宜君（项目 52 项、传承人 69 人、市场主体 3 家），用户提供 XLSX 文档。</span><span class="src-url">User-uploaded document</span></li>
       </ol>
+    </div>
+    <div class="qr-guide">
+      <img src="assets/guide-qrcode.png" alt="耀州窑热词关联图 扫码导览二维码">
+      <div>
+        <h2>手机扫码导览</h2>
+        <p>用相机或微信扫码，即可在手机上打开本页面，互动浏览耀州窑热词关联网络。</p>
+        <p class="qr-url">https://zxy0722.github.io/yaozhou-kiln-graph/</p>
+      </div>
     </div>
     <p class="copyright">耀州窑热词关联图 · 2026-10-12 生成 · ECharts 力导向交互可视化</p>
   </footer>
